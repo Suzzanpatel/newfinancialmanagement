@@ -1,0 +1,216 @@
+/*Body*/
+body, h1, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#f9f9e8;
+    color: #333;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d6e5c8;
+    padding: 50px 20px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:black;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+/*Blue text Box*/
+.text-box {
+    max-width: 50%;
+    background-color: #e4f5f9;
+    padding: 20px;
+    border-radius: 8px;
+    padding-top: 50px;
+}
+
+.text-box h1 {
+    font-size: 29px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-box p {
+    font-size: 26px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*First button Get Started*/
+.get-started-btn {
+    background-color: palevioletred;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    background-color: plum;
+}
+
+/* Mockup Image */
+.image-box {
+    max-width: 45%;
+}
+
+.mockup-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Header for Expense Tracker*/
+.header-bar {
+    background-color: #d6e5c8;
+    padding: 40px 0;
+    border-radius: 20px;
+}
+
+.header-bar h1 {
+    font-size: 30px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Features Section of Expense Tracker*/
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.feature-box {
+    background-color: #e4f5f9;
+    width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.feature-box h3 {
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Call-to-Action Button For Expense Tracker */
+.cta {
+    margin-top: 20px;
+}
+
+.cta button {
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: plum;
+}
+
+/*Cost of Living*/
+
+.header-bar-costofliving {
+    background-color: #d6e5c8;
+    padding: 40px 0;
+    border-radius: 20px;
+}
+
+.header-bar-costofliving h1 {
+    font-size: 30px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif
+}
+
+/* Features Section */
+.features-costofliving {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+}
+
+.features-box-costofliving {
+    background-color: #e4f5f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.features-box-costofliving h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.features-box-costofliving p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Call-to-Action Button */
+.cta-costofliving {
+    margin-top: 20px;
+}
+
+.cta-costofliving button {
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-costofliving button:hover {
+    background-color: plum;
+}
