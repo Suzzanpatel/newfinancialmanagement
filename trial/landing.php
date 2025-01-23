@@ -15,7 +15,7 @@
                 <li><a href="landing.php">HOME</a></li>
                 <li><a href="signup.php">EXPENSE TRACKER</a></li>
                 <li><a href="signup.php">COST OF LIVING CALCULATOR</a></li>
-                <li><a href="signup.php">LOGIN</a> | <a href="signup.php">SIGN UP</a></li>
+                <li><a href="login.php">LOGIN</a> | <a href="signup.php">SIGN UP</a></li>
             </ul>
         </nav>
     </header>

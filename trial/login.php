@@ -8,13 +8,17 @@ if ($conn->connect_error) {
 }
 
 // Handle form submission
+$errorMessage = ''; // To store error messages
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
     // Fetch the user's credentials from the database
-    $sql = "SELECT Password FROM User WHERE Email = '$email'";
-    $result = $conn->query($sql);
+    $sql = "SELECT Password FROM User WHERE Email = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
@@ -22,21 +26,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Verify the password
         if (password_verify($password, $hashedPassword)) {
-            echo "Login successful! Welcome, $email.";
+            // Redirect to dashboard.php
+            header("Location: dashboard.php");
+            exit();
         } else {
-            echo "Invalid password. Please try again.";
+            $errorMessage = "Invalid password. Please try again.";
         }
     } else {
-        echo "No user found with this email.";
+        $errorMessage = "No user found with this email.";
     }
+    $stmt->close();
     $conn->close();
 }
 ?>
-
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
