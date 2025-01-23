@@ -12,10 +12,10 @@
         <nav class="navbar">
             <img src="logo.png" alt="Logo" class="logo">
             <ul class="nav-links">
-                <li><a href="landing.html">HOME</a></li>
-                <li><a href="signup.html">EXPENSE TRACKER</a></li>
-                <li><a href="signup.html">COST OF LIVING CALCULATOR</a></li>
-                <li><a href="login.html">LOGIN</a> | <a href="signup.html">SIGN UP</a></li>
+                <li><a href="landing.php">HOME</a></li>
+                <li><a href="signup.php">EXPENSE TRACKER</a></li>
+                <li><a href="signup.php">COST OF LIVING CALCULATOR</a></li>
+                <li><a href="signup.php">LOGIN</a> | <a href="signup.php">SIGN UP</a></li>
             </ul>
         </nav>
     </header>
