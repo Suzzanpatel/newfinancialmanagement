@@ -28,7 +28,7 @@
                 <p>Discover city-specific cost of living insights and make smarter, data-driven decisions for your future.</p>
                 
                 <!--Get Started Button-->
-                <button class="get-started-btn">Get Started</button>
+                <button class="get-started-btn" onclick="window.location.href='signup.php'">Get Started</button>
             </div>
 
             <!--Mockup 1-->
@@ -57,7 +57,7 @@
             </section>
             <!--Start Now Button-->
             <div class="cta">
-                <button>Start Now!</button>
+                <button onclick="window.location.href='signup.php'">Start Now!</button>
             </div>
              <br>
              <br>
@@ -92,8 +92,9 @@
                     </p>
                 </div>
             </section>
+              <!-- COST OF LIVING BUTTON-->
             <div class="cta-costofliving">
-                <button>Find one now!</button>
+                <button onclick="window.location.href='signup.php'">Find one now!</button>
     </main>
 </body>
 </html>

@@ -1,4 +1,7 @@
 <?php
+// Start the session
+session_start();
+
 // Database connection
 $conn = new mysqli('localhost', 'root', '', 'fiscalpoint');
 
@@ -13,8 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Fetch the user's credentials from the database
-    $sql = "SELECT Password FROM User WHERE Email = ?";
+    // Fetch the user's credentials and UserID from the database
+    $sql = "SELECT UserID, Password FROM User WHERE Email = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -23,9 +26,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         $hashedPassword = $row['Password'];
+        $user_id = $row['UserID'];
 
         // Verify the password
         if (password_verify($password, $hashedPassword)) {
+            // Set session variable for user ID
+            $_SESSION['user_id'] = $user_id;
+
             // Redirect to dashboard.php
             header("Location: dashboard.php");
             exit();
@@ -35,9 +42,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $errorMessage = "No user found with this email.";
     }
+
     $stmt->close();
-    $conn->close();
 }
+$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -75,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         <button type="submit" class="login-button">Login</button>
       </form>
-      <p class="signup-link">new user? <a href="signup.html">sign up instead</a></p>
+      <p class="signup-link">new user? <a href="signup.php">sign up instead</a></p>
     </div>
 </main>
 </body>
