@@ -78,7 +78,7 @@ $conn->close();
         <br>
         <li><a href="#">Profile</a></li>
         <br>
-        <li><a href="#">Logout</a></li>
+        <li><a href="logout.php">Logout</a></li>
         <br>
       </ul>
     </div>
