@@ -92,7 +92,21 @@ $conn->close();
         <input type="date" id="date" name="date" required>
 
         <label for="category">Category:</label>
-        <input type="text" id="category" name="category" required>
+        <select id="category" name="category" required>
+        <option value="Housing">Housing</option>
+        <option value="Food">Food</option>
+        <option value="Transportation">Transportation</option>
+        <option value="Healthcare">Healthcare</option>
+        <option value="Education">Education</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Personal Care">Personal Care</option>
+        <option value="Debt Repayment">Debt Repayment</option>
+        <option value="Savings & Investments">Savings & Investments</option>
+        <option value="Insurance">Insurance</option>
+        <option value="Childcare/Dependents">Childcare/Dependents</option>
+        <option value="Gifts & Donations">Gifts & Donations</option>
+        <option value="Miscellaneous">Miscellaneous</option>
+    </select>
 
         <label for="item">Item:</label>
         <input type="text" id="item" name="item" required>

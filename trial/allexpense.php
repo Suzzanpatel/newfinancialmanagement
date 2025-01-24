@@ -16,15 +16,11 @@
             <br>
             <li><a href="landing.html">Home</a></li>
             <br>
-            <li><a href="#">Dashboard</a></li>
+            <li><a href="dashboard.php">Dashboard</a></li>
             <br>
-            <li><a href="addexpense.html">Add Expense</a></li>
+            <li><a href="addexpense.php">Add Expense</a></li>
             <br>
-            <li><a href="#">Expense Report</a>
-                <ul>
-                    <li><a href="#">Category Wise Report</a></li>
-                    <li><a href="#">All Expenses</a></li>
-                  </ul></li>
+            <li><a href="#">Expense Report</a></li>
             <br>
             <li><a href="#">Cost of Living Calculator</a></li>
             <br>
@@ -35,5 +31,24 @@
           </ul>
         </div>
     </div>
-</body>
-</html>
+    <main>
+    <div class="main-content">
+      <h1>Category wise Expenses:</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Sr no.</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Item</th>
+            <th>Cost of Item</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be dynamically added -->
+        </tbody>
+      </table>
+    </div>
+    </main>
+  </body>
+  </html>

@@ -15,15 +15,7 @@
     display: flex;
     height: 100vh;
   }
-  .form-container {
-    margin-top: 70px;
-    width: 400px;
-    background-color: #f9f9e8;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
+ 
   /* Sidebar */
   .sidebar {
     width: 25%;
@@ -64,4 +56,39 @@
   .menu li a:hover {
     text-decoration: underline;
   }
+
+
+  .main-content {
+    width: 75%;
+    padding: 40px;
+  }
+  
+  .main-content h1 {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #dcecf1;
+  }
+  
+  thead {
+    background-color: #c4dde4;
+  }
+  
+  th, td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #eef7fa;
+  }
+  
  
