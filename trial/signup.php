@@ -37,6 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Step 7: Execute the query and check if the insertion is successful
     if ($stmt->execute()) {
         echo "Registration successful!";
+        header("Location: dashboard.php");
     } else {
         echo "Error: " . $stmt->error;
     }
